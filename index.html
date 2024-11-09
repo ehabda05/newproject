@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Training</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="Navbar">
+    <ul>
+        <li id="main" style="float:left"><a href="#">Personal Training</a></li>
+        <li><a id ="macroCalc" href="#">Macro Calculator</a></li>
+        <li><a href="#">Food Guide</a></li>
+        <li><a href="#">Exercises</a></li>
+    </ul>
+</div>
+<br>
+<div id="macros">
+    <label> Calories: </label>
+    <label id = macroLabel> 0 </label><br><br>
+    <label id = macrosLabel> Protein: 0</label><br><br>
+
+    <label> Weight</label>
+    <input id="weight" type="number"><br><br>
+    <label> Age</label>
+    <input id="age" type="number"><br><br>
+    <label> Height</label>
+    <input id="feet" type="number">
+    <input id="inches" type="number"><br><br>
+    <label> Activity Level</label><br><br>
+    <input id = "Low" name="activityLevel" type="radio">
+    <label>Low</label>
+    <input id = "Moderate" name="activityLevel" type="radio">
+    <label>Moderate</label>
+    <input id = "High" name="activityLevel" type="radio">
+    <label>High</label><br><br>
+    <input id = "Male" name="gender" type="radio" >
+    <label> Male</label>
+    <input id = "Female" name="gender" type="radio" >
+    <label> Female</label><br><br>
+
+    <input id="bulk" type="radio" name="diet">
+    <label> Bulk</label>
+    <input id="maintain" type="radio" name="diet">
+    <label> Maintain</label>
+    <input id="cut" type="radio" name="diet">
+    <label> Cut</label><br><br>
+
+    <input id="submit" type="submit" onclick="userInput()"><br>
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>
